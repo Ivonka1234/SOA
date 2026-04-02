@@ -1,11 +1,16 @@
+using EventHub.Controllers;
+using EventHub.Data;
+using EventHub.Model;
+using EventHub.Repository;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using EventHub.Model;
-using EventHub.Data;
-using EventHub.Controllers;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddControllers();
+
+builder.Services.AddScoped<IEventRepository, EventRepository>();
+builder.Services.AddScoped<IOrganizerRepository, OrganizerRepository>();
 
 builder.Services.AddControllers()
     .AddJsonOptions(options =>

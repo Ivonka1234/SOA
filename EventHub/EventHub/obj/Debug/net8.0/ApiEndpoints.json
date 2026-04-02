@@ -10,6 +10,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "EventHub.Controllers.EventController",
+    "Method": "Create",
+    "RelativePath": "api/Event",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ev",
+        "Type": "EventHub.Model.Event",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "EventHub.Controllers.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "WeatherForecast",

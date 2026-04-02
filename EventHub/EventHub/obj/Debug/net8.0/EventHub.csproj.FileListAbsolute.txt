@@ -105,3 +105,4 @@ C:\Users\Ivonka\Documents\University\Semester 8-2026\Service Oriented Arch\Event
 C:\Users\Ivonka\Documents\University\Semester 8-2026\Service Oriented Arch\EventHub\EventHub\obj\Debug\net8.0\EventHub.pdb
 C:\Users\Ivonka\Documents\University\Semester 8-2026\Service Oriented Arch\EventHub\EventHub\obj\Debug\net8.0\EventHub.genruntimeconfig.cache
 C:\Users\Ivonka\Documents\University\Semester 8-2026\Service Oriented Arch\EventHub\EventHub\obj\Debug\net8.0\ref\EventHub.dll
+C:\Users\Ivonka\Documents\University\Semester 8-2026\Service Oriented Arch\EventHub\EventHub\obj\Debug\net8.0\EventHub.sourcelink.json
