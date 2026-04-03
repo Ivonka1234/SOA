@@ -26,6 +26,126 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "EventHub.Controllers.EventController",
+    "Method": "AssignOrganizer",
+    "RelativePath": "api/Event/{id}/assign",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "organizerId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EventHub.Controllers.EventController",
+    "Method": "GetByLocation",
+    "RelativePath": "api/Event/by-location",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "location",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EventHub.Controllers.EventController",
+    "Method": "GetByOrganizer",
+    "RelativePath": "api/Event/by-organizer/{organizerId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "organizerId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EventHub.Controllers.EventController",
+    "Method": "CheckLocation",
+    "RelativePath": "api/Event/check-location",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "location",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "date",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EventHub.Controllers.EventController",
+    "Method": "GetCount",
+    "RelativePath": "api/Event/count",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EventHub.Controllers.EventController",
+    "Method": "GetLargest",
+    "RelativePath": "api/Event/largest",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EventHub.Controllers.EventController",
+    "Method": "GetPast",
+    "RelativePath": "api/Event/past",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EventHub.Controllers.EventController",
+    "Method": "GetUpcoming",
+    "RelativePath": "api/Event/upcoming",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "days",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "EventHub.Controllers.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "WeatherForecast",

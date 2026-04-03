@@ -2,6 +2,7 @@ using EventHub.Controllers;
 using EventHub.Data;
 using EventHub.Model;
 using EventHub.Repository;
+using EventHub.Service;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 var builder = WebApplication.CreateBuilder(args);
@@ -11,6 +12,7 @@ builder.Services.AddControllers();
 
 builder.Services.AddScoped<IEventRepository, EventRepository>();
 builder.Services.AddScoped<IOrganizerRepository, OrganizerRepository>();
+builder.Services.AddScoped<IEventService, EventService>();
 
 builder.Services.AddControllers()
     .AddJsonOptions(options =>

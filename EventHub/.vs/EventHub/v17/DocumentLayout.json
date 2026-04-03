@@ -3,6 +3,30 @@
   "WorkspaceRootPath": "C:\\Users\\Ivonka\\Documents\\University\\Semester 8-2026\\Service Oriented Arch\\EventHub\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{882518CB-C37D-44DE-96FF-B67DC947DA4D}|EventHub\\EventHub.csproj|c:\\users\\ivonka\\documents\\university\\semester 8-2026\\service oriented arch\\eventhub\\eventhub\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{882518CB-C37D-44DE-96FF-B67DC947DA4D}|EventHub\\EventHub.csproj|solutionrelative:eventhub\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{882518CB-C37D-44DE-96FF-B67DC947DA4D}|EventHub\\EventHub.csproj|c:\\users\\ivonka\\documents\\university\\semester 8-2026\\service oriented arch\\eventhub\\eventhub\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{882518CB-C37D-44DE-96FF-B67DC947DA4D}|EventHub\\EventHub.csproj|solutionrelative:eventhub\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{882518CB-C37D-44DE-96FF-B67DC947DA4D}|EventHub\\EventHub.csproj|c:\\users\\ivonka\\documents\\university\\semester 8-2026\\service oriented arch\\eventhub\\eventhub\\service\\eventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{882518CB-C37D-44DE-96FF-B67DC947DA4D}|EventHub\\EventHub.csproj|solutionrelative:eventhub\\service\\eventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{882518CB-C37D-44DE-96FF-B67DC947DA4D}|EventHub\\EventHub.csproj|c:\\users\\ivonka\\documents\\university\\semester 8-2026\\service oriented arch\\eventhub\\eventhub\\service\\ieventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{882518CB-C37D-44DE-96FF-B67DC947DA4D}|EventHub\\EventHub.csproj|solutionrelative:eventhub\\service\\ieventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{882518CB-C37D-44DE-96FF-B67DC947DA4D}|EventHub\\EventHub.csproj|c:\\users\\ivonka\\documents\\university\\semester 8-2026\\service oriented arch\\eventhub\\eventhub\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{882518CB-C37D-44DE-96FF-B67DC947DA4D}|EventHub\\EventHub.csproj|solutionrelative:eventhub\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{882518CB-C37D-44DE-96FF-B67DC947DA4D}|EventHub\\EventHub.csproj|c:\\users\\ivonka\\documents\\university\\semester 8-2026\\service oriented arch\\eventhub\\eventhub\\repository\\eventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{882518CB-C37D-44DE-96FF-B67DC947DA4D}|EventHub\\EventHub.csproj|solutionrelative:eventhub\\repository\\eventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{882518CB-C37D-44DE-96FF-B67DC947DA4D}|EventHub\\EventHub.csproj|c:\\users\\ivonka\\documents\\university\\semester 8-2026\\service oriented arch\\eventhub\\eventhub\\migrations\\20260402155825_seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{882518CB-C37D-44DE-96FF-B67DC947DA4D}|EventHub\\EventHub.csproj|solutionrelative:eventhub\\migrations\\20260402155825_seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -23,14 +47,6 @@
       "RelativeMoniker": "D:0:0:{882518CB-C37D-44DE-96FF-B67DC947DA4D}|EventHub\\EventHub.csproj|solutionrelative:eventhub\\repository\\ieventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{882518CB-C37D-44DE-96FF-B67DC947DA4D}|EventHub\\EventHub.csproj|c:\\users\\ivonka\\documents\\university\\semester 8-2026\\service oriented arch\\eventhub\\eventhub\\repository\\eventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{882518CB-C37D-44DE-96FF-B67DC947DA4D}|EventHub\\EventHub.csproj|solutionrelative:eventhub\\repository\\eventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{882518CB-C37D-44DE-96FF-B67DC947DA4D}|EventHub\\EventHub.csproj|c:\\users\\ivonka\\documents\\university\\semester 8-2026\\service oriented arch\\eventhub\\eventhub\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{882518CB-C37D-44DE-96FF-B67DC947DA4D}|EventHub\\EventHub.csproj|solutionrelative:eventhub\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{882518CB-C37D-44DE-96FF-B67DC947DA4D}|EventHub\\EventHub.csproj|c:\\users\\ivonka\\documents\\university\\semester 8-2026\\service oriented arch\\eventhub\\eventhub\\repository\\organizerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{882518CB-C37D-44DE-96FF-B67DC947DA4D}|EventHub\\EventHub.csproj|solutionrelative:eventhub\\repository\\organizerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -39,16 +55,8 @@
       "RelativeMoniker": "D:0:0:{882518CB-C37D-44DE-96FF-B67DC947DA4D}|EventHub\\EventHub.csproj|solutionrelative:eventhub\\repository\\iorganizerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{882518CB-C37D-44DE-96FF-B67DC947DA4D}|EventHub\\EventHub.csproj|c:\\users\\ivonka\\documents\\university\\semester 8-2026\\service oriented arch\\eventhub\\eventhub\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{882518CB-C37D-44DE-96FF-B67DC947DA4D}|EventHub\\EventHub.csproj|solutionrelative:eventhub\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{882518CB-C37D-44DE-96FF-B67DC947DA4D}|EventHub\\EventHub.csproj|c:\\users\\ivonka\\documents\\university\\semester 8-2026\\service oriented arch\\eventhub\\eventhub\\model\\organizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{882518CB-C37D-44DE-96FF-B67DC947DA4D}|EventHub\\EventHub.csproj|solutionrelative:eventhub\\model\\organizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{882518CB-C37D-44DE-96FF-B67DC947DA4D}|EventHub\\EventHub.csproj|c:\\users\\ivonka\\documents\\university\\semester 8-2026\\service oriented arch\\eventhub\\eventhub\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{882518CB-C37D-44DE-96FF-B67DC947DA4D}|EventHub\\EventHub.csproj|solutionrelative:eventhub\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{882518CB-C37D-44DE-96FF-B67DC947DA4D}|EventHub\\EventHub.csproj|c:\\users\\ivonka\\documents\\university\\semester 8-2026\\service oriented arch\\eventhub\\eventhub\\eventhub.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
@@ -70,7 +78,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -78,7 +86,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "IEventService.cs",
+              "DocumentMoniker": "C:\\Users\\Ivonka\\Documents\\University\\Semester 8-2026\\Service Oriented Arch\\EventHub\\EventHub\\Service\\IEventService.cs",
+              "RelativeDocumentMoniker": "EventHub\\Service\\IEventService.cs",
+              "ToolTip": "C:\\Users\\Ivonka\\Documents\\University\\Semester 8-2026\\Service Oriented Arch\\EventHub\\EventHub\\Service\\IEventService.cs",
+              "RelativeToolTip": "EventHub\\Service\\IEventService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-03T08:32:30.459Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EventService.cs",
+              "DocumentMoniker": "C:\\Users\\Ivonka\\Documents\\University\\Semester 8-2026\\Service Oriented Arch\\EventHub\\EventHub\\Service\\EventService.cs",
+              "RelativeDocumentMoniker": "EventHub\\Service\\EventService.cs",
+              "ToolTip": "C:\\Users\\Ivonka\\Documents\\University\\Semester 8-2026\\Service Oriented Arch\\EventHub\\EventHub\\Service\\EventService.cs",
+              "RelativeToolTip": "EventHub\\Service\\EventService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-03T08:32:12.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "20260402155825_SeedData.cs",
               "DocumentMoniker": "C:\\Users\\Ivonka\\Documents\\University\\Semester 8-2026\\Service Oriented Arch\\EventHub\\EventHub\\Migrations\\20260402155825_SeedData.cs",
               "RelativeDocumentMoniker": "EventHub\\Migrations\\20260402155825_SeedData.cs",
@@ -91,33 +125,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "20260402155444_SeedData.cs",
-              "DocumentMoniker": "C:\\Users\\Ivonka\\Documents\\University\\Semester 8-2026\\Service Oriented Arch\\EventHub\\EventHub\\Migrations\\20260402155444_SeedData.cs",
-              "RelativeDocumentMoniker": "EventHub\\Migrations\\20260402155444_SeedData.cs",
-              "ToolTip": "C:\\Users\\Ivonka\\Documents\\University\\Semester 8-2026\\Service Oriented Arch\\EventHub\\EventHub\\Migrations\\20260402155444_SeedData.cs",
-              "RelativeToolTip": "EventHub\\Migrations\\20260402155444_SeedData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T15:54:44.741Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IOrganizerRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Ivonka\\Documents\\University\\Semester 8-2026\\Service Oriented Arch\\EventHub\\EventHub\\Repository\\IOrganizerRepository.cs",
-              "RelativeDocumentMoniker": "EventHub\\Repository\\IOrganizerRepository.cs",
-              "ToolTip": "C:\\Users\\Ivonka\\Documents\\University\\Semester 8-2026\\Service Oriented Arch\\EventHub\\EventHub\\Repository\\IOrganizerRepository.cs",
-              "RelativeToolTip": "EventHub\\Repository\\IOrganizerRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T15:51:06.784Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "OrganizerRepository.cs",
               "DocumentMoniker": "C:\\Users\\Ivonka\\Documents\\University\\Semester 8-2026\\Service Oriented Arch\\EventHub\\EventHub\\Repository\\OrganizerRepository.cs",
               "RelativeDocumentMoniker": "EventHub\\Repository\\OrganizerRepository.cs",
@@ -125,12 +133,11 @@
               "RelativeToolTip": "EventHub\\Repository\\OrganizerRepository.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAA5wAoAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T15:50:18.761Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-02T15:50:18.761Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "IEventRepository.cs",
               "DocumentMoniker": "C:\\Users\\Ivonka\\Documents\\University\\Semester 8-2026\\Service Oriented Arch\\EventHub\\EventHub\\Repository\\IEventRepository.cs",
               "RelativeDocumentMoniker": "EventHub\\Repository\\IEventRepository.cs",
@@ -138,8 +145,7 @@
               "RelativeToolTip": "EventHub\\Repository\\IEventRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T15:47:14.182Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-02T15:47:14.182Z"
             },
             {
               "$type": "Document",
@@ -149,40 +155,27 @@
               "RelativeDocumentMoniker": "EventHub\\Repository\\EventRepository.cs",
               "ToolTip": "C:\\Users\\Ivonka\\Documents\\University\\Semester 8-2026\\Service Oriented Arch\\EventHub\\EventHub\\Repository\\EventRepository.cs",
               "RelativeToolTip": "EventHub\\Repository\\EventRepository.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAowA8AAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-02T15:46:45.736Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "EventController.cs",
-              "DocumentMoniker": "C:\\Users\\Ivonka\\Documents\\University\\Semester 8-2026\\Service Oriented Arch\\EventHub\\EventHub\\Controllers\\EventController.cs",
-              "RelativeDocumentMoniker": "EventHub\\Controllers\\EventController.cs",
-              "ToolTip": "C:\\Users\\Ivonka\\Documents\\University\\Semester 8-2026\\Service Oriented Arch\\EventHub\\EventHub\\Controllers\\EventController.cs",
-              "RelativeToolTip": "EventHub\\Controllers\\EventController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T10:47:30.112Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Ivonka\\Documents\\University\\Semester 8-2026\\Service Oriented Arch\\EventHub\\EventHub\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "EventHub\\Data\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\Ivonka\\Documents\\University\\Semester 8-2026\\Service Oriented Arch\\EventHub\\EventHub\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "EventHub\\Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB8AAAAlAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Ivonka\\Documents\\University\\Semester 8-2026\\Service Oriented Arch\\EventHub\\EventHub\\Program.cs",
+              "RelativeDocumentMoniker": "EventHub\\Program.cs",
+              "ToolTip": "C:\\Users\\Ivonka\\Documents\\University\\Semester 8-2026\\Service Oriented Arch\\EventHub\\EventHub\\Program.cs",
+              "RelativeToolTip": "EventHub\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T10:20:52.11Z",
+              "WhenOpened": "2026-03-13T10:21:13.231Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 4,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Ivonka\\Documents\\University\\Semester 8-2026\\Service Oriented Arch\\EventHub\\EventHub\\appsettings.json",
               "RelativeDocumentMoniker": "EventHub\\appsettings.json",
@@ -190,24 +183,61 @@
               "RelativeToolTip": "EventHub\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-03-13T10:39:06.001Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Ivonka\\Documents\\University\\Semester 8-2026\\Service Oriented Arch\\EventHub\\EventHub\\Program.cs",
-              "RelativeDocumentMoniker": "EventHub\\Program.cs",
-              "ToolTip": "C:\\Users\\Ivonka\\Documents\\University\\Semester 8-2026\\Service Oriented Arch\\EventHub\\EventHub\\Program.cs",
-              "RelativeToolTip": "EventHub\\Program.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAAwAAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T10:21:13.231Z",
+              "WhenOpened": "2026-03-13T10:39:06.001Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "EventController.cs",
+              "DocumentMoniker": "C:\\Users\\Ivonka\\Documents\\University\\Semester 8-2026\\Service Oriented Arch\\EventHub\\EventHub\\Controllers\\EventController.cs",
+              "RelativeDocumentMoniker": "EventHub\\Controllers\\EventController.cs",
+              "ToolTip": "C:\\Users\\Ivonka\\Documents\\University\\Semester 8-2026\\Service Oriented Arch\\EventHub\\EventHub\\Controllers\\EventController.cs",
+              "RelativeToolTip": "EventHub\\Controllers\\EventController.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAuwFgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T10:47:30.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IOrganizerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Ivonka\\Documents\\University\\Semester 8-2026\\Service Oriented Arch\\EventHub\\EventHub\\Repository\\IOrganizerRepository.cs",
+              "RelativeDocumentMoniker": "EventHub\\Repository\\IOrganizerRepository.cs",
+              "ToolTip": "C:\\Users\\Ivonka\\Documents\\University\\Semester 8-2026\\Service Oriented Arch\\EventHub\\EventHub\\Repository\\IOrganizerRepository.cs",
+              "RelativeToolTip": "EventHub\\Repository\\IOrganizerRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T15:51:06.784Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "20260402155444_SeedData.cs",
+              "DocumentMoniker": "C:\\Users\\Ivonka\\Documents\\University\\Semester 8-2026\\Service Oriented Arch\\EventHub\\EventHub\\Migrations\\20260402155444_SeedData.cs",
+              "RelativeDocumentMoniker": "EventHub\\Migrations\\20260402155444_SeedData.cs",
+              "ToolTip": "C:\\Users\\Ivonka\\Documents\\University\\Semester 8-2026\\Service Oriented Arch\\EventHub\\EventHub\\Migrations\\20260402155444_SeedData.cs",
+              "RelativeToolTip": "EventHub\\Migrations\\20260402155444_SeedData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T15:54:44.741Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Ivonka\\Documents\\University\\Semester 8-2026\\Service Oriented Arch\\EventHub\\EventHub\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "EventHub\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Ivonka\\Documents\\University\\Semester 8-2026\\Service Oriented Arch\\EventHub\\EventHub\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "EventHub\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB8AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T10:20:52.11Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Event.cs",
               "DocumentMoniker": "C:\\Users\\Ivonka\\Documents\\University\\Semester 8-2026\\Service Oriented Arch\\EventHub\\EventHub\\Model\\Event.cs",
               "RelativeDocumentMoniker": "EventHub\\Model\\Event.cs",
@@ -215,12 +245,11 @@
               "RelativeToolTip": "EventHub\\Model\\Event.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwA0AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T10:26:38.443Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-13T10:26:38.443Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "20260313104439_InitialCreate.cs",
               "DocumentMoniker": "C:\\Users\\Ivonka\\Documents\\University\\Semester 8-2026\\Service Oriented Arch\\EventHub\\EventHub\\Migrations\\20260313104439_InitialCreate.cs",
               "RelativeDocumentMoniker": "EventHub\\Migrations\\20260313104439_InitialCreate.cs",
@@ -232,7 +261,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "AppDbContextModelSnapshot.cs",
               "DocumentMoniker": "C:\\Users\\Ivonka\\Documents\\University\\Semester 8-2026\\Service Oriented Arch\\EventHub\\EventHub\\Migrations\\AppDbContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "EventHub\\Migrations\\AppDbContextModelSnapshot.cs",
@@ -244,7 +273,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "Organizer.cs",
               "DocumentMoniker": "C:\\Users\\Ivonka\\Documents\\University\\Semester 8-2026\\Service Oriented Arch\\EventHub\\EventHub\\Model\\Organizer.cs",
               "RelativeDocumentMoniker": "EventHub\\Model\\Organizer.cs",
@@ -252,12 +281,11 @@
               "RelativeToolTip": "EventHub\\Model\\Organizer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T10:30:10.605Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-13T10:30:10.605Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "EventHub.http",
               "DocumentMoniker": "C:\\Users\\Ivonka\\Documents\\University\\Semester 8-2026\\Service Oriented Arch\\EventHub\\EventHub\\EventHub.http",
               "RelativeDocumentMoniker": "EventHub\\EventHub.http",
