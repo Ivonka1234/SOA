@@ -13,6 +13,7 @@ builder.Services.AddControllers();
 builder.Services.AddScoped<IEventRepository, EventRepository>();
 builder.Services.AddScoped<IOrganizerRepository, OrganizerRepository>();
 builder.Services.AddScoped<IEventService, EventService>();
+builder.Services.AddAutoMapper(typeof(Program));
 
 builder.Services.AddControllers()
     .AddJsonOptions(options =>

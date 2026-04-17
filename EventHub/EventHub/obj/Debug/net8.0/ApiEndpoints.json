@@ -18,8 +18,61 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "ev",
-        "Type": "EventHub.Model.Event",
+        "Name": "newEvent",
+        "Type": "EventHub.DTOs.EventCreateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EventHub.Controllers.EventController",
+    "Method": "GetById",
+    "RelativePath": "api/Event/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EventHub.Controllers.EventController",
+    "Method": "Update",
+    "RelativePath": "api/Event/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updatedEvent",
+        "Type": "EventHub.DTOs.EventCreateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EventHub.Controllers.EventController",
+    "Method": "Delete",
+    "RelativePath": "api/Event/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],

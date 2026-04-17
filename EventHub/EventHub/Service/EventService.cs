@@ -1,4 +1,6 @@
-﻿using EventHub.Data;
+﻿using AutoMapper;
+using EventHub.Data;
+using EventHub.DTOs;
 using EventHub.Model;
 using EventHub.Repository;
 using System.Security.AccessControl;
@@ -9,125 +11,131 @@ namespace EventHub.Service
     {
         private readonly IEventRepository _eventRepository;
         private readonly IOrganizerRepository _organizerRepository;
-        public EventService(IEventRepository eventRepository, IOrganizerRepository organizerRepository  )
+        private readonly IMapper _mapper;
+
+
+        public EventService(IEventRepository eventRepository, IOrganizerRepository organizerRepository, IMapper mapper)
         {
             _eventRepository = eventRepository;
             _organizerRepository = organizerRepository;
+            _mapper = mapper;
+        }
+        public async Task<IEnumerable<EventDTO>> GetAllEventsAsync()
+        {
+            var events = await _eventRepository.GetAllAsync();   
+            return _mapper.Map<IEnumerable<EventDTO>>(events); 
         }
 
-        public async Task<bool> AssignOrganizerAsync(int eventId, int organizerId)
+
+        public async Task<EventDTO?> GetEventByIdAsync(int id)
         {
+            var entity = await _eventRepository.GetByIdAsync(id);
+            if (entity == null) return null;
+            return _mapper.Map<EventDTO>(entity);
+        }
 
-            var ev = await _eventRepository.GetByIdAsync(eventId);
-            if (ev == null)
-            {
-                throw new KeyNotFoundException("Event not found");
-            }
+        public async Task<EventDTO> CreateEventAsync(EventCreateDTO newEvent)
+        {
+           
+            if (string.IsNullOrWhiteSpace(newEvent.Title))
+                throw new ArgumentNullException("Event title cannot be empty");
+            if (newEvent.Date < DateTime.Now)
+                throw new ArgumentException("Event Date must be in the future");
+            if (newEvent.MaxCapacity <= 0)
+                throw new ArgumentException("Max capacity must be positive");
+            var entity = _mapper.Map<Event>(newEvent);
+            await _eventRepository.AddAsync(entity);
+            return _mapper.Map<EventDTO>(entity);
+        }
 
-            var organizer = await _organizerRepository.GetByIdAsync(organizerId);
-            if (organizer == null)
-            {
-                throw new KeyNotFoundException("Organizer not found");
-            }
+        public async Task<EventDTO?> UpdateEventAsync(int id, EventCreateDTO updatedEvent)
+        {
+            if (string.IsNullOrWhiteSpace(updatedEvent.Title))
+                throw new ArgumentNullException("Event title cannot be empty");
+    
+            if (updatedEvent.Date < DateTime.Now)
+                throw new ArgumentException("Event Date must be in the future");
+      
+            if (updatedEvent.MaxCapacity <= 0)
+                throw new ArgumentException("Max capacity must be positive");
 
-            ev.OrganizerId = organizerId;
+            var existing = await _eventRepository.GetByIdAsync(id);
+            if (existing == null) return null;
+            _mapper.Map(updatedEvent, existing);
+            await _eventRepository.UpdateAsync(existing);
+            return _mapper.Map<EventDTO>(existing);
+        }
 
-            await _eventRepository.UpdateAsync(ev);
-
+        public async Task<bool> DeleteEventAsync(int id)
+        {
+            var entity = await _eventRepository.GetByIdAsync(id);
+            if (entity == null) return false;
+            await _eventRepository.DeleteAsync(id);
             return true;
         }
 
-        public async Task<Event> CreateEventAsync(Event newEvent)
+        public async Task<IEnumerable<EventDTO>> GetUpcomingEventsAsync(int days)
         {
-            if (string.IsNullOrWhiteSpace(newEvent.Title))
-            {
-                throw new ArgumentNullException("Event title cannot be null");
-            }
-            if (newEvent.Date < DateTime.UtcNow)
-            {
-                throw new ArgumentException("Event date must be in the future");
-            }
-            if (newEvent.MaxCapacity <= 0)
-            {
-                throw new ArgumentException("Max capacity must be positive");
-            }
-            await _eventRepository.AddAsync(newEvent);
-            return newEvent;
+            var allEvents = await _eventRepository.GetAllAsync();
+            var filtered = allEvents.Where(e => e.Date > DateTime.Now && e.Date <= DateTime.Now.AddDays(days))
+                .OrderBy(e => e.Date);
+
+            return _mapper.Map<IEnumerable<EventDTO>>(filtered);
+
         }
 
-        public async Task DeleteEventAsync(int id)
+        public async Task<IEnumerable<EventDTO>> GetEventsByLocationAsync(string location)
         {
-           await _eventRepository.DeleteAsync(id);
-          
+            var allEvents = await _eventRepository.GetAllAsync();
+            var filteredresult = allEvents.Where(e => e.Location.ToLower() == location.ToLower());
+            return _mapper.Map<IEnumerable<EventDTO>>(filteredresult);
         }
 
-        public async Task<IEnumerable<Event>> GetAllEventsAsync()
+        public async Task<IEnumerable<EventDTO>> GetPastEventsAsync()
         {
-            return await _eventRepository.GetAllAsync();
-        }
-
-        public async Task<Event?> GetEventByIdAsync(int id)
-        {
-            return await _eventRepository.GetByIdAsync(id);
+            var allEvents = await _eventRepository.GetAllAsync();
+            var results = allEvents.Where(e => e.Date < DateTime.Now).OrderBy(e => e.Date);
+            return _mapper.Map<IEnumerable<EventDTO>>(results);
         }
 
         public async Task<int> GetEventCountAsync()
         {
-            var allEvents=await _eventRepository.GetAllAsync();
+            var allEvents = await _eventRepository.GetAllAsync();
             return allEvents.Count();
         }
 
-        public async Task<IEnumerable<Event>> GetEventsByLocationAsync(string location)
+        public async Task<EventDTO?> GetLargestEventAsync()
         {
-            var allEvents=await _eventRepository.GetAllAsync();
-           return allEvents.Where(e=>e.Location==location).ToList();
-        }
-
-        public async Task<IEnumerable<Event>> GetEventsByOrganizerAsync(int organizerId)
-        {
-            var allEvents=await _eventRepository.GetAllAsync();
-            return allEvents.Where(e=>e.OrganizerId==organizerId).ToList();
-        }
-
-        public async Task<Event?> GetLargestEventAsync()
-        {
-           var allEvents=await _eventRepository.GetAllAsync();
-            return allEvents.OrderByDescending(e => e.MaxCapacity).FirstOrDefault();
-        }
-
-        public async Task<IEnumerable<Event>> GetPastEventsAsync()
-        {
-          var allEvents=await _eventRepository.GetAllAsync();
-            return allEvents.Where(e => e.Date < DateTime.Now).OrderBy(e => e.Date);
-        }
-
-        public async Task<IEnumerable<Event>> GetUpcomingEventsAsync(int days)
-        {
-            var allEvents= await _eventRepository.GetAllAsync();
-            return allEvents.Where(e=>e.Date>DateTime.Now && e.Date<=DateTime.Now.AddDays(days)).OrderBy(e=>e.Date);
+            var allEvents = await _eventRepository.GetAllAsync();
+            var largest = allEvents.OrderByDescending(e => e.MaxCapacity).FirstOrDefault();
+            if (largest == null) return null;
+            return _mapper.Map<EventDTO>(largest);
         }
 
         public async Task<bool> IsLocationAvailableAsync(string location, DateTime date)
         {
-            var allEvents=await _eventRepository.GetAllAsync();
-            return !allEvents.Any(e=>e.Location==location&& e.Date.Date==date.Date);
+            var allEvents = await _eventRepository.GetAllAsync();
+            return !allEvents.Any(e => e.Location == location && e.Date.Date == date.Date);
         }
 
-        public async Task UpdateEventAsync(Event updatedEvent)
+        public async Task<IEnumerable<EventDTO>> GetEventsByOrganizerAsync(int organizerId)
         {
-            if (string.IsNullOrWhiteSpace(updatedEvent.Title))
-            {
-                throw new ArgumentNullException("Event title cannot be null");
-            }
-            if (updatedEvent.Date < DateTime.UtcNow)
-            {
-                throw new ArgumentException("Event date must be in the future");
-            }
-            if (updatedEvent.MaxCapacity <= 0)
-            {
-                throw new ArgumentException("Max capacity must be positive");
-            }
-            await _eventRepository.UpdateAsync(updatedEvent);
+            var allEvents = await _eventRepository.GetAllAsync();
+            var filtered = allEvents.Where(e => e.OrganizerId == organizerId);
+            return _mapper.Map<IEnumerable<EventDTO>>(filtered);
+
+        }
+
+        public async Task AssignOrganizerAsync(int eventId, int organizerId)
+        {
+            var events = await _eventRepository.GetByIdAsync(eventId);
+            if (events == null)
+                throw new ArgumentException("Event does not exist");
+            var organizer = await _organizerRepository.GetByIdAsync(organizerId);
+            if (organizer == null)
+                throw new ArgumentException("Organizer does not exist");
+            events.OrganizerId = organizerId;
+            await _eventRepository.UpdateAsync(events);
         }
     }
 }
